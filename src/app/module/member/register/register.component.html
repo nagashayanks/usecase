@@ -1,0 +1,91 @@
+<div class="div" style="background:url('./assets/login.png') ; ">
+    <div class="container" style="opacity: 0.9; height: 82vh;width:50vw">
+        <header style="margin-left: 15rem; color: rgb(157, 184, 157);">
+            <h5>Login and Registration Form</h5>
+        </header>
+        <section *ngIf="!signup">
+            <div class="card mt-5">
+                <div class="card-header">
+                    Login Form
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+                        <fieldset>
+                            <div>
+                                <div class="col-md-12 form-group ">
+                                    <label>Your Email</label>
+                                    <input id="email" name="email" type="text" placeholder="Email Id"
+                                        class="form-control" formControlName="email">
+                                    <div *ngIf="login.email.invalid && (login.email.dirty || login.email.touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="login.email.errors.required"> Name is required </div>                                     
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group  mt-2">
+                                    <label>Your Password</label>
+                                    <input id="password" name="password" type="password" placeholder="Password"
+                                        class="form-control" formControlName="password">
+                                        <div *ngIf="login.password.invalid && (login.password.dirty || login.password.touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="login.password.errors.required"> Password is required </div>                                     
+                                    </div>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label class="lcolor"> <input type="checkbox" name="chk"> Remember me
+                                    </label>
+                                    <a class="forget-password" *ngIf="failedattempts>=5" (click)="resetPassword()">Reset
+                                        Password</a>
+                                </div>
+                                <div class="form-group ">
+                                    <a href="javascript:void(0)" class="txt float-right" (click)="signup = true">Signup</a>
+                                    <button class="btn btn-outline-primary btn-sm float-right login_btn mr-2"
+                                        >Login</button>
+                                    <!-- <button class="btn btn-outline-primary btn-sm float-right login_btn mr-2 " 
+                                    (click)="signup = true">Sign up</button>                        -->
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section *ngIf="signup">
+            <div class="card mt-5">
+                <div class="card-header">
+                    Registration Form
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="registerForm">
+                        <fieldset>
+                            <div>
+                                <div class="col-md-12 form-group ">
+                                    <label>Your Username</label>
+                                    <input id="name" name="name" type="text" placeholder="Username" class="form-control"
+                                        formControlName="name">
+                                </div>
+                                <div class="col-md-12 form-group ">
+                                    <label>Your Email</label>
+                                    <input id="email" name="email" type="text" placeholder="Email Id"
+                                        class="form-control" formControlName="email">
+                                </div>
+                                <div class="col-md-12 form-group  mt-2">
+                                    <label>Your Password</label>
+                                    <input id="password" name="password" type="password" placeholder="Password"
+                                        class="form-control" formControlName="password">
+                                </div>
+                                <div class="form-group ">
+                                    <button class="btn btn-outline-primary btn-sm float-right login_btn"
+                                        (click)="signup = false">Cancel</button>
+                                    <button class="btn btn-outline-primary btn-sm float-right login_btn mr-2 "
+                                        (click)="registerUser()" [disabled]="!registerForm.valid">Sign up</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<p-toast [style]="{marginTop: '80px'}" position="top-center"></p-toast>

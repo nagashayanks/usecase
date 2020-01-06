@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-outline-primary{
+    color: #ff8c00 !important;;
+}
+
+body .ui-button {
+    margin: 0;
+    color: #ffffff;
+    background-color: orange !important;
+    border: 1px solid orange !important;
+    font-size: 14px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}

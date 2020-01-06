@@ -1,0 +1,231 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "value": "lucida",
+      "display": "Lucida Technologies"
+    },
+    {
+      "id": 2,
+      "value": "siemens",
+      "display": "Siemens Healthineers"
+    },
+    {
+      "id": 3,
+      "value": "wipro",
+      "display": "Wipro"
+    },
+    {
+      "id": 4,
+      "value": "accenture",
+      "display": "Accenture"
+    }
+  ],
+  "user": [
+    {
+      "email": "naga@gmail.com",
+      "password": "123",
+      "name": "naga",
+      "id": 2
+    },
+    {
+      "email": "jai@gmail.com",
+      "password": "12345",
+      "name": "jaikumar",
+      "id": 5
+    },
+    {
+      "email": "soundar@gmail.com",
+      "password": "123",
+      "name": "soundar",
+      "id": 6
+    }
+  ],
+  "userGroups": [
+    {
+      "userId": 2,
+      "groupName": "Lucida Technologies",
+      "groupId": 1,
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "groupName": "Wipro",
+      "groupId": 3,
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "groupName": "Siemens Healthineers",
+      "groupId": 2,
+      "id": 3
+    }
+  ],
+  "groupMessage": [
+    {
+      "message": "hi",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 1,
+      "id": 1
+    },
+    {
+      "message": "asdsad",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 1,
+      "id": 2
+    },
+    {
+      "message": "sdsds",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 1,
+      "id": 3
+    },
+    {
+      "message": "i m from wipro\n",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 2,
+      "id": 4
+    },
+    {
+      "message": "i m from wipro\n",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 2,
+      "id": 5
+    },
+    {
+      "message": "hi ",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 3,
+      "id": 6
+    },
+    {
+      "message": "test",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 3,
+      "id": 7
+    },
+    {
+      "message": "hi",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 1,
+      "id": 8
+    },
+    {
+      "message": "rer",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 3,
+      "id": 9
+    },
+    {
+      "message": "asdasfsdf",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 1,
+      "id": 10
+    },
+    {
+      "message": "dfsdfsdf",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 1,
+      "id": 11
+    },
+    {
+      "message": "adfdfdfsdf",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 1,
+      "id": 12
+    },
+    {
+      "message": "zdghsdfi",
+      "userName": {
+        "email": "jai@gmail.com",
+        "password": "12345",
+        "name": "jaikumar",
+        "id": 5
+      },
+      "groupId": 1,
+      "id": 13
+    },
+    {
+      "message": "hi ",
+      "userName": {
+        "email": "naga@gmail.com",
+        "password": "123",
+        "name": "naga",
+        "id": 2
+      },
+      "groupId": 3,
+      "id": 14
+    },
+    {
+      "message": "hello soundar",
+      "userName": {
+        "email": "jai@gmail.com",
+        "password": "12345",
+        "name": "jaikumar",
+        "id": 5
+      },
+      "groupId": 3,
+      "id": 15
+    }
+  ]
+}

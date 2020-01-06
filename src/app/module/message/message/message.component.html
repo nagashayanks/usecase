@@ -1,0 +1,31 @@
+<div class="container row vh">        
+    <div class="col-lg-4 mt-2">
+            <strong style="color: orange;"> Welcome {{currentUser.name}} </strong>
+        <h4>Selected Groups</h4>
+    <p-listbox [options]="messagelist" [(ngModel)]="property" (click)="selectedlist(property)"  optionLabel="groupName"></p-listbox>
+</div>
+<div class="col-lg-8 mt-2">
+    <h4>Drop Your message here...</h4>
+        <textarea [rows]="4" [cols]="60" [(ngModel)]="messageData" pInputTextarea></textarea>
+        <p-button label="Back" class="float-right" (click)="back()" iconPos="left"></p-button>
+        <p-button label="Send" icon="pi pi-check" class="ml-2" (click)="sendData(Data)" iconPos="left"></p-button>
+        <!-- <p-listbox [options]="commentlist" [(ngModel)]="propComment" optionLabel="message"></p-listbox> -->
+        <h5>Your Conversations</h5> 
+        <div class="my-custom-scrollbar">
+           <p-table [value]="commentlist">
+                <!-- <ng-template pTemplate="header">
+                    <tr>
+                        <th>Your Conversations</th>                       
+                    </tr>
+                </ng-template> -->
+                <ng-template pTemplate="body" let-car>
+                    <tr>
+                        <td>{{car.message}} <br/>
+                           user:     {{car.userName.name}}
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+        </div>
+</div>

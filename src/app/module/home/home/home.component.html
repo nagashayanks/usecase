@@ -1,0 +1,27 @@
+<div class="div ml-2 mt-2 clr" >
+       <strong> Welcome {{currentUser.name}} </strong>
+</div>
+<div class="float-right mt-2 mr-2">
+    <p-button label="Joinned Groups" icon="pi pi-eye" (click)="goto()" iconPos="left"> {{groupData.length}}</p-button>
+   
+</div>
+<div class="container row vh">
+
+    <div class="col-lg-6 mt-2" *ngFor="let data of companyData">
+        <p-card >
+                Welcome to  {{data.value}}<br/>
+        Please Click here to Join  {{data.display}}
+        <p-button label="Join" (click)="groupJoin(data)" class="float-right" iconPos="left"></p-button>
+        </p-card>
+    </div>
+</div>
+
+
+<p-confirmDialog #cd  key='tandc' header="Confirmation" [closable]="false" icon="pi pi-exclamation-triangle">
+        <p-footer>
+            <button  type="button" pButton icon="pi pi-times" label="No" (click)="cd.reject()"></button>
+            <button type="button" pButton icon="pi pi-check" label="Yes" (click)="cd.accept()" ></button>
+        </p-footer>
+    </p-confirmDialog>
+
+<p-toast [style]="{marginTop: '80px'}" position="top-center"></p-toast>

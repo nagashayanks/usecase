@@ -1,0 +1,8 @@
+.vh{
+    height: 82vh !important;
+    }
+    .my-custom-scrollbar {
+        position: relative;
+        height: 280px;
+        overflow: auto;
+        }

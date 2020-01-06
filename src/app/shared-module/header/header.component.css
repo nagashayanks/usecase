@@ -1,0 +1,26 @@
+.logout{
+    background: #ff8c00;
+    border: none !important;
+    color: #fff;
+}
+.logout:hover{
+    background: #ff8c00 !important;
+    border-color: #ff8c00 !important;
+}
+.clr{
+    background: #ff8c00;
+
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #ff8c00 !important;
+    border-color: #ff8c00 !important;
+}
+.btn-outline-success {
+    color: #fff !important;
+    border-color: #ff8c00 !important;
+}
+.img{
+    height: 6.5vh;
+    width: 8vw;
+}
